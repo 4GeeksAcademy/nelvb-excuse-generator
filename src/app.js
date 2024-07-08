@@ -35,8 +35,12 @@ window.onload = function() {
 
   function displayExcuse() {
     var excuse = generateExcuse();
+    document.getElementById("The_excuse").innerText = excuse;
     console.log(excuse);
   }
 
   displayExcuse();
+  document
+    .getElementById("generate-excuse-btn")
+    .addEventListener("click", displayExcuse);
 };
